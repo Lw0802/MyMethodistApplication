@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">MyMethodistApplication</string>
+    <string name="title_activity_login_page" translatable="false">LoginPage</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label" translatable="false">First Fragment</string>
+    <string name="second_fragment_label" translatable="false">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="About1"> GraceWell Methodist Church has a rich history that dates back to the late 19th century. It was founded in the small town of Graceville in the heartland of the United States. The church was established by a group of dedicated Methodist followers who were inspired by the teachings of John Wesley and sought to spread the message of God\'s grace and love. </string>
+    <string name="About1p2">In 1885, a humble wooden structure was constructed as the first place of worship for GraceWell Methodist Church.</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_maps" translatable="false">MapsActivity</string>
+    <string name="back" translatable="false"><![CDATA[<-]]></string>
+    <string name="forwards" translatable="false"><![CDATA[->]]></string>
+    <string name="sun">SUN</string>
+    <string name="mon">MON</string>
+    <string name="tue">TUE</string>
+    <string name="wed">WED</string>
+    <string name="thur">THUR</string>
+    <string name="fri">FRI</string>
+    <string name="sat">SAT</string>
+    <string name="feb_2021" translatable="false">Feb 2021</string>
+    <string name="address" translatable="false" />
+    <string name="About1p3">In the mid-1960s, GraceWell Methodist Church underwent a significant expansion, with a modern sanctuary being built to accommodate the growing congregation. This expansion allowed for the addition of various ministries, including youth groups, women\'s groups, and community service initiatives</string>
+    <string name="About1p4">The early congregation faced numerous challenges, including limited resources and a small membership. However, their unwavering faith and determination allowed the church to grow steadily over the years</string>
+
+    <!--- Main Navigation Headings-->
+    <string name="sermonsmenu">Sermons</string>
+    <string name="contactmenu">Contact Us</string>
+    <string name="homesmenu">Home</string>
+    <string name="eventsmenu">Events</string>
+    <string name="menumenu">Menu</string>
+
+    <!--- About 1 Headings-->
+    <string name="about1mainheading">History</string>
+    <string name="about1subheading1">History</string>
+    <string name="about1subheading2">Mission</string>
+    <string name="about1subheading3">Beliefs</string>
+    <string name="about1subheading4">Faith</string>
+    <string name="about1subheading5">Staff</string>
+
+
+    <string name="title_activity_change_language" translatable="false">ChangeLanguage</string>
+
+    <string name="changelangheading">Change Language</string>
+    <string name="changelangh2">Languages that we support</string>
+    <string name="changelangh3">English</string>
+    <string name="changelangh4">Afrikaans</string>
+    <string name="changelangh5">Arabic</string>
+    <string name="changelangh6">Hindi</string>
+
+    <string name="accounth">Account</string>
+    <string name="accounth1">Update Personal Information</string>
+    <string name="accounth2">Change Password</string>
+    <string name="accounth3">Change Username</string>
+    <string name="accounth4">Manage Requests</string>
+    <string name="accounth5">Notifications</string>
+    <string name="accounth6">Change Language</string>
+    <string name="accounth7">Help</string>
+
+
+</resources>

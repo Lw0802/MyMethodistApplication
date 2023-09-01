@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_Comm_Chat"
+        android:title="Community Chat"
+        />
+
+    <item android:id="@+id/nav_Donations"
+        android:title="Donations"
+        />
+
+    <item android:id="@+id/nav_Photos"
+        android:title="Photos"
+        />
+
+    <item android:id="@+id/nav_Volunteer"
+        android:title="Volunteer"
+        />
+
+    <item android:id="@+id/nav_About"
+        android:title="About Us"
+        />
+
+    <item android:id="@+id/nav_Join_Us"
+        android:title="Join Us"
+        />
+
+    <item android:id="@+id/nav_Appointments"
+        android:title="Appointments"
+        />
+
+    <item android:id="@+id/nav_Account"
+        android:title="Account"
+        />
+
+    <item android:id="@+id/nav_Log_Out"
+        android:title="Log Out"
+        android:icon="@drawable/baseline_logout_24"
+        />
+</menu>

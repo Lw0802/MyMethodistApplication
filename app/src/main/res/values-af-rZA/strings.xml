@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about1mainheading">Geskiedenis</string>
+    <string name="about1subheading1">Geskiedenis</string>
+    <string name="about1subheading2">Sending</string>
+    <string name="about1subheading3">Gelowe</string>
+    <string name="about1subheading4">Geloof</string>
+    <string name="about1subheading5">Personeel</string>
+
+    <string name="changelangheading">Verander taal</string>
+    <string name="changelangh2">Tale wat ons ondersteunt</string>
+    <string name="changelangh3">Engelsh</string>
+    <string name="changelangh4">Afrikaans</string>
+    <string name="changelangh5">Arabies</string>
+    <string name="changelangh6">Hindi</string>
+
+    <string name="accounth">Account</string>
+    <string name="accounth1">Update Personal Information</string>
+    <string name="accounth2">Change Password</string>
+    <string name="accounth3">Change Username</string>
+    <string name="accounth4">Manage Requests</string>
+    <string name="accounth5">Notifications</string>
+    <string name="accounth6">Change Language</string>
+    <string name="accounth7">Help</string>
+
+
+    <string name="sermonsmenu">Preke</string>
+    <string name="contactmenu">Kontak Ons</string>
+    <string name="homesmenu">Tuis</string>
+    <string name="eventsmenu">Gebeurtenisse</string>
+    <string name="menumenu">Spyskaart</string>
+    <string name="app_name">MyMethodistApplication</string>
+    <string name="next">" Volgende"</string>
+    <string name="previous">Vorige</string>
+    <string name="About1">GraceWell Methodiste Kerk het \'n ryk geskiedenis wat terugdateer na die laat 19de eeu. Dit is gestig in die klein dorpie Graceville in die hartland van die Verenigde State. Die kerk is gestig deur \'n groep toegewyde Metodiste volgelinge wat geïnspireer is deur die leerstellings van John Wesley en probeer het om die boodskap van God se genade en liefde te versprei</string>
+    <string name="About1p2">" In 1885 is 'n nederige houtstruktuur gebou as die eerste plek van aanbidding vir GraceWell Methodiste Kerk."</string>
+    <string name="prompt_email">e-pos</string>
+    <string name="prompt_password">wagwoord</string>
+    <string name="action_sign_in">teken aan of registreer</string>
+    <string name="action_sign_in_short">teken aan</string>
+    <string name="welcome">Welkom</string>
+    <string name="invalid_username">Nie \'n geldige gebruikernaam nie</string>
+    <string name="invalid_password">Wagwoord moet >5 karakters wees</string>
+    <string name="login_failed">Kon nie aanmeld nie</string>
+    <string name="sun">Sondag</string>
+    <string name="mon">Maandag</string>
+    <string name="tue">Dinsdag</string>
+    <string name="wed">Woensdag</string>
+    <string name="thur">Donderdag</string>
+
+    <string name="fri">Vrydag</string>
+    <string name="sat">Saturdag</string>
+    <string name="About1p3">In die middel-1960\'s het die GraceWell Methodiste Kerk \'n aansienlike uitbreiding ondergaan, met \'n moderne heiligdom wat gebou is om die groeiende gemeente te akkommodeer. Hierdie uitbreiding het die toevoeging van verskeie bedieninge moontlik gemaak, insluitend jeuggroepe, vrouegroepe en gemeenskapsdiensinisiatiewe</string>
+
+    <string name="About1p4">Die vroeë gemeente het talle uitdagings in die gesig gestaar, insluitend beperkte hulpbronne en \'n klein lidmaattal. Hulle onwrikbare geloof en vasberadenheid het egter die kerk deur die jare bestendig laat groei</string>
+</resources>

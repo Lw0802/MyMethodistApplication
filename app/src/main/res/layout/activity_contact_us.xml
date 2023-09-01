@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactUs"
+    android:background="@color/white"
+    android:id="@+id/ContactUsPage">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="241dp"
+        app:srcCompat="@drawable/church_logo" />
+    <WebView
+        android:id="@+id/webView5"
+        android:layout_width="match_parent"
+        android:layout_height="251dp"
+        android:baselineAligned="false" />
+
+
+    <TextView
+        android:id="@+id/Location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/webView5"
+        android:layout_marginTop="19dp"
+        android:layout_weight="1"
+        android:drawableLeft="@drawable/baseline_pin_drop_24"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:text="    Cornwall Hill College 0157 Irene, South Africa"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Location"
+        android:layout_marginTop="19dp"
+        android:layout_weight="1"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:text="    info@gracewell.co.za"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/CellNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email"
+        android:layout_marginTop="19dp"
+        android:layout_weight="1"
+        android:drawableLeft="@drawable/baseline_local_phone_24"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:text="    064 644 7924"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/OpenTimes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CellNumber"
+        android:layout_marginTop="19dp"
+        android:layout_weight="1"
+        android:drawableLeft="@drawable/baseline_access_time_24"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:text="    Open Times"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/OpenTimes"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/openhours" />
+
+    <Button
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottomNavigationView"
+        android:layout_marginLeft="250dp"
+        android:layout_marginBottom="1dp"
+        android:backgroundTint="#2792C4"
+        android:text="Request Appointment"
+        android:id="@+id/CreateAppointment"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_nav_bar">
+
+
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>

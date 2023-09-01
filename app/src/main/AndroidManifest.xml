@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <queries>
+        <intent>
+            <action android:name="com.google.android.youtube.api.service.START" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/gracewellmethodist"
+        android:label="GraceWell Methodist Church"
+        android:roundIcon="@mipmap/gracewellmethodist_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyMethodistApplication"
+        tools:targetApi="31">
+        <activity
+            android:name=".Photos3"
+            android:exported="false" />
+        <activity
+            android:name=".ChooseLanguage"
+            android:exported="false" />
+        <activity
+            android:name=".ChangeLanguage"
+            android:exported="false"
+            android:label="@string/title_activity_change_language"
+            android:theme="@style/Theme.MyMethodistApplication" />
+        <activity
+            android:name=".changepassword"
+            android:exported="false" />
+        <activity
+            android:name=".Account"
+            android:exported="false" />
+        <activity
+            android:name=".VolunteerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".About5"
+            android:exported="false" />
+        <activity
+            android:name=".About4"
+            android:exported="false" />
+        <activity
+            android:name=".About3"
+            android:exported="false" />
+        <activity
+            android:name=".About2"
+            android:exported="false" />
+        <activity
+            android:name=".About1"
+            android:exported="false" />
+        <activity
+            android:name=".JoinMinistryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EventsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AppointmentsActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="YOUR_API_KEY" />
+
+        <activity
+            android:name=".ContactUs"
+            android:exported="false" />
+        <activity
+            android:name=".SermonsPage"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterPage"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".PushNotificationService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

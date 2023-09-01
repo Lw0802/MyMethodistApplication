@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".LoginActivity"
+    android:id="@+id/LoginActivity"
+    android:background="@color/white">
+
+    <ProgressBar
+        android:id="@+id/ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:layout_below="@id/CompleteLoginButton"/>
+
+
+    <Button
+        android:id="@+id/CompleteLoginButton"
+        android:layout_width="378dp"
+        android:layout_height="67dp"
+        android:layout_below="@id/editTextTextPassword"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="108dp"
+        android:text="Log In"
+        android:backgroundTint="#2792C4"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/FacebookButton"
+        android:layout_width="200dp"
+        android:layout_height="67dp"
+        android:layout_below="@id/CompleteLoginButton"
+        android:layout_alignRight="@id/CompleteLoginButton"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="63dp"
+        android:layout_marginRight="3dp"
+        android:backgroundTint="#4267B2"
+        android:text="Facebook" />
+
+    <Button
+        android:id="@+id/YouTubeButton"
+        android:layout_width="200dp"
+        android:layout_height="67dp"
+        android:layout_below="@id/CompleteLoginButton"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="63dp"
+        android:text="YouTube" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="223dp"
+         />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress2"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView2"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="42dp"
+
+        android:ems="10"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTextEmailAddress2"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="172dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/YouTubeButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginBottom="34dp"
+        android:text="Dont Have an Account?" />
+
+    <TextView
+        android:id="@+id/clickheretext"
+        android:layout_width="83dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView11"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="12dp"
+        android:text="Click Here"
+        android:textColor="#2792C4" />
+
+
+</RelativeLayout>

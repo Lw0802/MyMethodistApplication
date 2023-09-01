@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/MainActivity"
+    android:background="@color/white">
+
+
+    <TextView
+        android:id="@+id/WelcomeText"
+        android:layout_width="341dp"
+        android:layout_height="72dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="286dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="427dp"
+        android:text="Welcome To The All New Gracewell Methodist Church Mobile Application"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/WelcomeText1"
+        android:layout_width="328dp"
+        android:layout_height="67dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="452dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="266dp"
+        android:text="Do not forget to show hospitality to strangers, for by so doing some people have shown hospitality to angels without knowing it.(Hebrews 13:2)"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/WelcomeText2"
+        android:layout_width="150dp"
+        android:layout_height="52dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="552dp"
+        android:layout_marginEnd="118dp"
+        android:layout_marginBottom="181dp"
+        android:text="We Welcome You All"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/rImage"
+        android:layout_width="match_parent"
+        android:layout_height="263dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-10dp" />
+
+    <Button
+        android:id="@+id/LoginButton"
+        android:layout_width="340dp"
+        android:layout_height="67dp"
+        android:layout_above="@id/SignUpButton"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="332dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#2792C4"
+        android:layout_centerHorizontal="true"
+        android:text="Login" />
+
+    <Button
+        android:id="@+id/SignUpButton"
+        android:layout_width="342dp"
+        android:layout_height="66dp"
+        android:backgroundTint="#2792C4"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="39dp"
+        android:text="Sign Up" />
+
+</RelativeLayout>
+
