@@ -1,5 +1,6 @@
 package com.example.mymethodistapplication;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
@@ -9,16 +10,25 @@ import android.os.Bundle;
 import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.PopupMenu;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.mymethodistapplication.databinding.ActivityAbout1Binding;
 import com.example.mymethodistapplication.databinding.ActivityAbout5Binding;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+import com.squareup.picasso.Picasso;
 
 public class About5 extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
     ActivityAbout5Binding binding;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,7 +36,7 @@ public class About5 extends AppCompatActivity {
         binding = ActivityAbout5Binding.inflate(getLayoutInflater());
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
         bottomNavigationView.setLabelVisibilityMode(bottomNavigationView.LABEL_VISIBILITY_LABELED);
-
+        ImageView about5p1;
 
         historytext = (TextView) findViewById(R.id.historytext);
         historytext.setOnClickListener(new View.OnClickListener() {
@@ -88,8 +98,7 @@ public class About5 extends AppCompatActivity {
                 showPopupMenu(bottomNavigationView);
 
                 return true;
-            }
-            else if (item.getItemId() == R.id.home_nav) {
+            } else if (item.getItemId() == R.id.home_nav) {
                 startActivity(new Intent(getApplicationContext(), HomeActivity.class));
                 overridePendingTransition(0, 0);
                 return true;
@@ -99,6 +108,11 @@ public class About5 extends AppCompatActivity {
 
             return false;
         });
+
+
+
+
+
 
     }
 
@@ -159,6 +173,8 @@ public class About5 extends AppCompatActivity {
                 }
                 if (itemId == R.id.nav_Account)
                 {
+                    Intent intent = new Intent(About5.this, Photos1.class);
+                    startActivity(intent);
                     return true;
                 }
 

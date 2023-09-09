@@ -1,98 +1,56 @@
 package com.example.mymethodistapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.PopupMenu;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.mymethodistapplication.databinding.ActivityAbout1Binding;
-import com.example.mymethodistapplication.databinding.ActivityHomeBinding;
+import com.example.mymethodistapplication.databinding.ActivityForgotPasswordBinding;
+import com.example.mymethodistapplication.databinding.ActivityUpdateuserinfoBinding;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.auth.AuthCredential;
+import com.google.firebase.auth.EmailAuthProvider;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 
-public class About1 extends AppCompatActivity {
+import org.w3c.dom.Text;
 
+public class ForgotPassword extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
-    ActivityAbout1Binding binding;
+    ActivityForgotPasswordBinding binding;
 
-    @SuppressLint("MissingInflatedId")
+    private EditText newEmailEditText;
+    private EditText passwordEditText;
+    private FirebaseAuth mAuth;
+    private EditText emailEditText;
+    private TextView testtext;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_about1);
-        binding = ActivityAbout1Binding.inflate(getLayoutInflater());
-        bottomNavigationView = findViewById(R.id.bottomNavigationView);
-        bottomNavigationView.setLabelVisibilityMode(bottomNavigationView.LABEL_VISIBILITY_LABELED);
+        setContentView(R.layout.activity_forgot_password);
 
-        historytext = (TextView) findViewById(R.id.historytext);
-        testtext = (TextView) findViewById(R.id.test);
 
         FirebaseAuth auth = FirebaseAuth.getInstance();
         FirebaseUser currentUser = auth.getCurrentUser();
 
-        if (currentUser != null) {
-            String userEmail = currentUser.getEmail();
-            // Now you have the current user's email (userEmail)
-            testtext.setText(userEmail);
-        }
+        mAuth = FirebaseAuth.getInstance();
+        emailEditText = findViewById(R.id.emailEditText);
 
-
-        historytext.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openAbout1();
-            }
-        });
-
-        missiontext = (TextView) findViewById(R.id.missiontext);
-        missiontext.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openAbout2();
-            }
-        });
-
-        beliefstext = (TextView) findViewById(R.id.beliefstext);
-        beliefstext.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openAbout3();
-            }
-        });
-
-        faithtext = (TextView) findViewById(R.id.faithtext);
-        faithtext.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openAbout4();
-            }
-        });
-
-        stafftext = (TextView) findViewById(R.id.stafftext);
-        stafftext.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openAbout5();
-            }
-        });
-
-
-
-
-
+        binding = ActivityForgotPasswordBinding.inflate(getLayoutInflater());
+        bottomNavigationView = findViewById(R.id.bottomNavigationView);
+        bottomNavigationView.setLabelVisibilityMode(bottomNavigationView.LABEL_VISIBILITY_LABELED);
 
         bottomNavigationView.setOnItemSelectedListener(item -> {
 
@@ -125,8 +83,6 @@ public class About1 extends AppCompatActivity {
         });
 
     }
-
-
     private void showPopupMenu(BottomNavigationView bottomNavView) {
         PopupMenu popupMenu = new PopupMenu(this, bottomNavView, Gravity.END);
         popupMenu.getMenuInflater().inflate(R.menu.popup_menu, popupMenu.getMenu());
@@ -142,12 +98,12 @@ public class About1 extends AppCompatActivity {
                     return true;
                 }
                 if (itemId == R.id.nav_Join_Us) {
-                    Intent intent = new Intent(About1.this, JoinMinistryActivity.class);
+                    Intent intent = new Intent(ForgotPassword.this, JoinMinistryActivity.class);
                     startActivity(intent);
                     return true;
                 }
                 if (itemId == R.id.nav_Appointments) {
-                    Intent intent = new Intent(About1.this, AppointmentsActivity.class);
+                    Intent intent = new Intent(ForgotPassword.this, AppointmentsActivity.class);
                     startActivity(intent);
                     return true;
                 }
@@ -162,7 +118,7 @@ public class About1 extends AppCompatActivity {
                 }
                 if (itemId == R.id.nav_Photos) {
 
-                    Intent intent = new Intent(About1.this, Photos3.class);
+                    Intent intent = new Intent(ForgotPassword.this, Photos3.class);
                     startActivity(intent);
                     return true;
                 }
@@ -170,7 +126,7 @@ public class About1 extends AppCompatActivity {
                     return true;
                 }
                 if (itemId == R.id.nav_About) {
-                    Intent intent = new Intent(About1.this, About1.class);
+                    Intent intent = new Intent(ForgotPassword.this, About1.class);
                     startActivity(intent);
                     return true;
                 }
@@ -184,37 +140,27 @@ public class About1 extends AppCompatActivity {
         });
         popupMenu.show();
     }
+    public void resetPassword(View view) {
+        String email = emailEditText.getText().toString().trim();
 
-    private TextView historytext;
-    private TextView missiontext;
-    private TextView beliefstext;
-    private TextView faithtext;
-    private TextView stafftext;
-    private TextView testtext;
+        if (email.isEmpty()) {
+            Toast.makeText(this, "Please enter your email address", Toast.LENGTH_SHORT).show();
+            return;
+        }
 
-    private void openAbout1() {
-        Intent intent = new Intent(this, About1.class);
-        startActivity(intent);
-    }
-
-    private void openAbout2() {
-        Intent intent = new Intent(this, About2.class);
-        startActivity(intent);
-    }
-
-    private void openAbout3() {
-        Intent intent = new Intent(this, About3.class);
-        startActivity(intent);
-    }
-
-    private void openAbout4() {
-        Intent intent = new Intent(this, About4.class);
-        startActivity(intent);
-    }
-
-    private void openAbout5() {
-        Intent intent = new Intent(this, About5.class);
-        startActivity(intent);
+        mAuth.sendPasswordResetEmail(email)
+                .addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        if (task.isSuccessful()) {
+                            Toast.makeText(ForgotPassword.this, "Password reset email sent", Toast.LENGTH_SHORT).show();
+                        } else {
+                            Toast.makeText(ForgotPassword.this, "Failed to send reset email. Please check your email address.", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
     }
 
 }
+
+

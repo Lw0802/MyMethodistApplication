@@ -21,16 +21,29 @@
         android:theme="@style/Theme.MyMethodistApplication"
         tools:targetApi="31">
         <activity
+            android:name=".Help"
+            android:exported="false"
+            android:label="@string/title_activity_help"
+            android:theme="@style/Theme.MyMethodistApplication" />
+        <activity
+            android:name=".Notifications"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".Updateuserinfo"
+            android:exported="false" />
+        <activity
+            android:name=".Photos1"
+            android:exported="false" />
+        <activity
             android:name=".Photos3"
             android:exported="false" />
         <activity
             android:name=".ChooseLanguage"
             android:exported="false" />
-        <activity
-            android:name=".ChangeLanguage"
-            android:exported="false"
-            android:label="@string/title_activity_change_language"
-            android:theme="@style/Theme.MyMethodistApplication" />
+
         <activity
             android:name=".changepassword"
             android:exported="false" />

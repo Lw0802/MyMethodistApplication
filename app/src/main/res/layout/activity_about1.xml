@@ -112,7 +112,7 @@
         android:layout_alignParentEnd="true"
         android:layout_marginTop="13dp"
         android:layout_marginEnd="166dp"
-        android:gravity="center"
+        android:layout_centerInParent="true"
         android:text="@string/about1mainheading"
         android:textSize="24sp" />
 
@@ -219,23 +219,14 @@
         app:menu="@menu/bottom_nav_bar">
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
-    <Button
-        android:id="@+id/afrikaansbutton"
+    <TextView
+        android:id="@+id/test"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="203dp"
-        android:layout_marginBottom="73dp"
-        android:text="Afrikaans" />
+        android:layout_marginTop="257dp"
+        android:layout_marginEnd="262dp"
+        android:text="TextView" />
 
-    <Button
-        android:id="@+id/englishbutton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="79dp"
-        android:layout_marginBottom="71dp"
-        android:text="English" />
 </RelativeLayout>

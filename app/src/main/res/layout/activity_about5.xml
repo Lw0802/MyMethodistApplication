@@ -5,6 +5,181 @@
     android:layout_height="match_parent"
     tools:context=".About5">
 
+    <ImageView
+        android:id="@+id/about5p4"
+        android:layout_width="112dp"
+        android:layout_height="143dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="289dp"
+        android:layout_marginEnd="253dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.518"
+        app:srcCompat="@drawable/business2"
+        android:elevation="10dp"
+        tools:layout_conversion_absoluteHeight="85dp"
+        tools:layout_conversion_absoluteWidth="73dp" />
+
+    <View
+        android:id="@+id/myRectangleView7"
+        android:layout_width="359dp"
+        android:layout_height="158dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="456dp"
+        android:layout_marginEnd="17dp"
+        android:background="@drawable/rectangle" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="573dp"
+        android:layout_marginEnd="90dp"
+        android:text="AtGorodn@gmail.com" />
+
+    <ImageView
+        android:id="@+id/about5p2"
+        android:layout_width="112dp"
+        android:layout_height="143dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="465dp"
+        android:layout_marginEnd="253dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.518"
+        app:srcCompat="@drawable/business3"
+        tools:layout_conversion_absoluteHeight="85dp"
+        tools:layout_conversion_absoluteWidth="73dp" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="498dp"
+        android:layout_marginEnd="129dp"
+        android:text="Anthony Gordon" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="536dp"
+        android:layout_marginEnd="169dp"
+        android:text="TextView" />
+
+    <View
+        android:id="@+id/myRectangleView4"
+        android:layout_width="359dp"
+        android:layout_height="158dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="278dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/rectangle" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="358dp"
+        android:layout_marginEnd="170dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="395dp"
+        android:layout_marginEnd="91dp"
+        android:text="AtGorodn@gmail.com" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="320dp"
+        android:layout_marginEnd="130dp"
+        android:text="Anthony Gordon" />
+
+    <View
+        android:id="@+id/myRectangleView"
+        android:layout_width="359dp"
+        android:layout_height="158dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="114dp"
+        android:layout_marginEnd="19dp"
+        android:background="@drawable/rectangle" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="194dp"
+        android:layout_marginEnd="171dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="231dp"
+        android:layout_marginEnd="92dp"
+        android:text="AtGorodn@gmail.com" />
+
+    <ImageView
+        android:id="@+id/about5p3"
+        android:layout_width="112dp"
+        android:layout_height="143dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="123dp"
+        android:layout_marginEnd="255dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.518"
+        tools:layout_conversion_absoluteHeight="85dp"
+        tools:layout_conversion_absoluteWidth="73dp"
+        app:srcCompat="@drawable/business1" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="130dp"
+        android:text="Anthony Gordon" />
+
     <TextView
         android:id="@+id/faithtext"
         android:layout_width="wrap_content"
@@ -52,9 +227,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="183dp"
-        android:gravity="center"
         android:text="Staff"
         android:textSize="24sp" />
 
@@ -111,16 +286,6 @@
         android:text="History"
         android:textSize="16sp" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="356dp"
-        android:layout_height="637dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="80dp"
-        android:layout_marginEnd="22dp"
-        app:srcCompat="@drawable/staff" />
-
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
@@ -129,4 +294,7 @@
         android:layout_alignParentBottom="true"
         app:menu="@menu/bottom_nav_bar">
     </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
 </RelativeLayout>

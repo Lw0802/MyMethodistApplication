@@ -233,6 +233,8 @@ public class HomeActivity extends AppCompatActivity {
                 }
                 if (itemId == R.id.nav_Photos)
                 {
+                    Intent intent = new Intent(HomeActivity.this, Photos1.class);
+                    startActivity(intent);
                     return true;
                 }
                 if (itemId == R.id.nav_Volunteer)

@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.PopupMenu;
+import android.widget.TextView;
 import android.widget.Toast;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.example.mymethodistapplication.databinding.ActivityAbout1Binding;
@@ -37,8 +38,9 @@ public class ChooseLanguage extends AppCompatActivity {
         bottomNavigationView.setLabelVisibilityMode(bottomNavigationView.LABEL_VISIBILITY_LABELED);
 
         LanguageManager lang = new LanguageManager(this);
-        Button afrikaansbutton = (Button) findViewById(R.id.afrikaansbutton);
-        afrikaansbutton.setOnClickListener(new View.OnClickListener() {
+
+        TextView afrikaanstext  = findViewById(R.id.afrikaanstext);
+        afrikaanstext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 lang.updateResource("af");
@@ -46,8 +48,9 @@ public class ChooseLanguage extends AppCompatActivity {
             }
         });
 
-        Button englishbutton = (Button) findViewById(R.id.englishbutton);
-        englishbutton.setOnClickListener(new View.OnClickListener() {
+
+        TextView englishtext  = findViewById(R.id.englishtext);
+        englishtext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 lang.updateResource("en");
@@ -55,8 +58,9 @@ public class ChooseLanguage extends AppCompatActivity {
             }
         });
 
-        Button hindibutton = (Button) findViewById(R.id.hindibutton);
-        hindibutton.setOnClickListener(new View.OnClickListener() {
+
+        TextView zulustext  = findViewById(R.id.zulutext);
+        zulustext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 lang.updateResource("hi");
@@ -93,64 +97,53 @@ public class ChooseLanguage extends AppCompatActivity {
             return false;
         });
 
-        // Start of showing image from database
-        // getting ImageView by its id
-        ImageView englishflag = findViewById(R.id.englishflag);
 
 
-        // we will get the default FirebaseDatabase instance
-        FirebaseDatabase firebaseDatabase
-                = FirebaseDatabase.getInstance();
 
-        // we will get a DatabaseReference for the database
-        // root node
-        DatabaseReference databaseReference
-                = firebaseDatabase.getReference();
+        // Define an array of ImageViews
+        ImageView[] imageViews = new ImageView[4]; // Replace 3 with the number of ImageViews you have
 
-        // Here "image" is the child node value we are
-        // getting child node data in the getImage variable
-        DatabaseReference getImage
-                = databaseReference.child("englishlang");
+// Assign the ImageViews by their unique IDs
+        imageViews[0] = findViewById(R.id.lang1); // Replace with your ImageView IDs
+        imageViews[1] = findViewById(R.id.lang2);
+        imageViews[2] = findViewById(R.id.lang3);
+        imageViews[3] = findViewById(R.id.lang4);
 
-        // Adding listener for a single change
-        // in the data at this location.
-        // this listener will triggered once
-        // with the value of the data at the location
-        getImage.addListenerForSingleValueEvent(
-                new ValueEventListener() {
-                    @Override
-                    public void onDataChange(
-                            @NonNull DataSnapshot dataSnapshot) {
-                        // getting a DataSnapshot for the
-                        // location at the specified relative
-                        // path and getting in the link variable
-                        String link = dataSnapshot.getValue(
-                                String.class);
+        FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
+        DatabaseReference databaseReference = firebaseDatabase.getReference();
+        DatabaseReference imagesReference = databaseReference.child("Images");
 
-                        // loading that data into rImage
-                        // variable which is ImageView
-                        Picasso.get().load(link).into(englishflag);
+        imagesReference.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                int index = 0;
+
+                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                    String link = snapshot.getValue(String.class);
+
+                    // Check if the index is within the range of your ImageViews array
+                    if (index < imageViews.length) {
+                        // Load the image into the corresponding ImageView
+                        Picasso.get().load(link).into(imageViews[index]);
+                        index++;
+                    } else {
+                        // Handle the case where you have more image URLs than ImageViews
+                        break;
                     }
+                }
 
-                    // this will called when any problem
-                    // occurs in getting data
-                    @Override
-                    public void onCancelled(
-                            @NonNull DatabaseError databaseError)
-                    {
-                        // we are showing that error message in
-                        // toast
-                        Toast
-                                .makeText(ChooseLanguage.this,
-                                        "Error Loading Image",
-                                        Toast.LENGTH_SHORT)
-                                .show();
-                    }
-                });
-        // End of showing image from database
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+
+
+        });
     }
 
-    private void showPopupMenu(BottomNavigationView bottomNavView) {
+    private void showPopupMenu (BottomNavigationView bottomNavView){
         PopupMenu popupMenu = new PopupMenu(this, bottomNavView, Gravity.END);
         popupMenu.getMenuInflater().inflate(R.menu.popup_menu, popupMenu.getMenu());
 
@@ -204,4 +197,4 @@ public class ChooseLanguage extends AppCompatActivity {
         });
         popupMenu.show();
     }
-    }
+}
