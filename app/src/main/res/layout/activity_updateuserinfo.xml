@@ -6,6 +6,129 @@
     android:layout_height="match_parent"
     tools:context=".Updateuserinfo">
 
+    <EditText
+        android:id="@+id/Uidedittext"
+        android:layout_width="267dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="591dp"
+        android:layout_marginEnd="104dp"
+        android:ems="10"
+
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="109dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="570dp"
+        android:layout_marginEnd="256dp"
+        android:text="UID" />
+
+    <EditText
+        android:id="@+id/emailedittext6"
+        android:layout_width="267dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="489dp"
+        android:layout_marginEnd="105dp"
+        android:ems="10"
+
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="109dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="468dp"
+        android:layout_marginEnd="257dp"
+        android:text="Phone Number" />
+
+    <EditText
+        android:id="@+id/emailedittext"
+        android:layout_width="267dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="380dp"
+        android:layout_marginEnd="106dp"
+        android:ems="10"
+
+        android:inputType="phone"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="358dp"
+        android:layout_marginEnd="332dp"
+        android:text="Email" />
+
+    <EditText
+        android:id="@+id/emailedittext4"
+        android:layout_width="267dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="274dp"
+        android:layout_marginEnd="102dp"
+        android:ems="10"
+
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="255dp"
+        android:layout_marginEnd="312dp"
+        android:text="Surname" />
+
+    <EditText
+        android:id="@+id/emailedittext2"
+        android:layout_width="267dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="172dp"
+        android:layout_marginEnd="99dp"
+        android:ems="10"
+
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp" />
+
     <TextView
         android:id="@+id/textView24"
         android:layout_width="276dp"
@@ -18,36 +141,6 @@
         android:text="Update Personal Info"
         android:textSize="26dp" />
 
-    <TextView
-        android:id="@+id/emailTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="212dp"
-        android:layout_marginEnd="233dp"
-        android:text="TextView" />
-
-    <TextView
-        android:id="@+id/displayTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="378dp"
-        android:layout_marginEnd="279dp"
-        android:text="TextView" />
-
-    <TextView
-        android:id="@+id/uidTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="116dp"
-        android:layout_marginEnd="207dp"
-        android:text="TextView" />
-
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
@@ -57,15 +150,29 @@
         app:menu="@menu/bottom_nav_bar"></com.google.android.material.bottomnavigation.BottomNavigationView>
 
     <Button
-        android:id="@+id/resetPasswordButton"
+        android:id="@+id/updateuserinfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="472dp"
-        android:layout_marginEnd="119dp"
-        android:onClick="resetPassword"
+        android:layout_marginStart="263dp"
+        android:layout_marginTop="703dp"
+        android:layout_marginEnd="26dp"
         android:backgroundTint="#2792C4"
-        android:text="Forgot Password?" />
+        android:onClick="resetPassword"
+        android:text="Update Info" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="153dp"
+        android:layout_marginEnd="298dp"
+        android:text="First Name" />
 
 </RelativeLayout>

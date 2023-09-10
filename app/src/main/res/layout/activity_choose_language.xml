@@ -6,16 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".ChooseLanguage">
 
-    <Button
-        android:id="@+id/englishbutton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="263dp"
-        android:layout_marginBottom="116dp"
-        android:text="English" />
-
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
@@ -26,15 +16,15 @@
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
     <TextView
-        android:id="@+id/textView21"
+        android:id="@+id/afrikaanstext"
         android:layout_width="279dp"
         android:layout_height="48dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="115dp"
-        android:layout_marginEnd="43dp"
+        android:layout_marginTop="347dp"
+        android:layout_marginEnd="26dp"
         android:clickable="true"
-        android:text="@string/changelangh2"
+        android:text="@string/changelangh4"
         android:textSize="18dp" />
 
     <TextView
@@ -43,44 +33,11 @@
         android:layout_height="48dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="376dp"
-        android:layout_marginEnd="12dp"
+        android:layout_marginTop="418dp"
+        android:layout_marginEnd="26dp"
         android:clickable="true"
         android:text="@string/changelangh5"
         android:textSize="18dp" />
-
-    <TextView
-        android:id="@+id/englishtext"
-        android:layout_width="279dp"
-        android:layout_height="48dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="232dp"
-        android:layout_marginEnd="9dp"
-        android:clickable="true"
-        android:text="@string/changelangh3"
-        android:textSize="18dp" />
-
-    <TextView
-        android:id="@+id/afrikaanstext"
-        android:layout_width="279dp"
-        android:layout_height="48dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="305dp"
-        android:layout_marginEnd="13dp"
-        android:clickable="true"
-        android:text="@string/changelangh4"
-        android:textSize="18dp" />
-
-    <ImageView
-        android:id="@+id/lang1"
-        android:layout_width="36dp"
-        android:layout_height="42dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="221dp"
-        android:layout_marginEnd="312dp" />
 
     <ImageView
         android:id="@+id/lang3"
@@ -88,8 +45,9 @@
         android:layout_height="42dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="373dp"
-        android:layout_marginEnd="308dp" />
+        android:layout_marginTop="415dp"
+        android:layout_marginEnd="322dp"
+        android:src="@drawable/southafrica" />
 
     <ImageView
         android:id="@+id/lang4"
@@ -97,8 +55,9 @@
         android:layout_height="42dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="444dp"
-        android:layout_marginEnd="309dp" />
+        android:layout_marginTop="486dp"
+        android:layout_marginEnd="323dp"
+        android:src="@drawable/spainish" />
 
     <ImageView
         android:id="@+id/lang2"
@@ -106,8 +65,31 @@
         android:layout_height="42dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="297dp"
-        android:layout_marginEnd="312dp" />
+        android:layout_marginTop="339dp"
+        android:layout_marginEnd="326dp"
+        android:src="@drawable/afrikaans" />
+
+    <ImageView
+        android:id="@+id/lang1"
+        android:layout_width="36dp"
+        android:layout_height="42dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="263dp"
+        android:layout_marginEnd="326dp"
+        android:src="@drawable/english" />
+
+    <TextView
+        android:id="@+id/englishtext"
+        android:layout_width="279dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="274dp"
+        android:layout_marginEnd="23dp"
+        android:clickable="true"
+        android:text="@string/changelangh3"
+        android:textSize="18dp" />
 
     <TextView
         android:id="@+id/spanishtext"
@@ -115,22 +97,34 @@
         android:layout_height="48dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="447dp"
-        android:layout_marginEnd="13dp"
+        android:layout_marginTop="489dp"
+        android:layout_marginEnd="26dp"
         android:clickable="true"
         android:text="@string/changelangh6"
         android:textSize="18dp" />
 
     <TextView
-        android:id="@+id/textView20"
-        android:layout_width="215dp"
-        android:layout_height="52dp"
+        android:id="@+id/textView38"
+        android:layout_width="258dp"
+        android:layout_height="63dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="83dp"
-        android:layout_marginBottom="721dp"
-        android:text="@string/changelangheading"
-        android:textSize="24sp" />
+        android:layout_centerInParent="true"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="45dp"
+        android:text="Change Language"
+        android:textSize="26dp" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="250dp"
+        android:layout_height="43dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="151dp"
+        android:layout_marginEnd="62dp"
+        android:text="Languages we support"
+        android:textSize="23dp" />
 
 </RelativeLayout>

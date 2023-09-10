@@ -105,7 +105,7 @@ public class Account extends AppCompatActivity {
 
 
     private void openchangepassword() {
-        Intent intent = new Intent(this, ForgotPassword.class);
+        Intent intent = new Intent(this, ChangePassword.class);
         startActivity(intent);
     }
 

@@ -21,6 +21,9 @@
         android:theme="@style/Theme.MyMethodistApplication"
         tools:targetApi="31">
         <activity
+            android:name=".ChangePassword"
+            android:exported="false" />
+        <activity
             android:name=".Help"
             android:exported="false"
             android:label="@string/title_activity_help"
@@ -43,7 +46,6 @@
         <activity
             android:name=".ChooseLanguage"
             android:exported="false" />
-
         <activity
             android:name=".changepassword"
             android:exported="false" />

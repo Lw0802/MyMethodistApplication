@@ -37,8 +37,13 @@ public class Updateuserinfo extends AppCompatActivity {
     private TextView displayTextView;
 
     private TextView emailTextView;
+    private EditText email;
+    private EditText uid;
     private TextView uidTextView;
     private FirebaseAuth mAuth;
+
+    private Button updateuserinfo;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,13 +57,20 @@ public class Updateuserinfo extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
 
         // Find TextViews by their IDs
-        emailTextView = findViewById(R.id.emailTextView);
-        uidTextView = findViewById(R.id.uidTextView);
-        displayTextView = findViewById(R.id.displayTextView);
 
+        email = findViewById(R.id.emailedittext);
+        uid = findViewById(R.id.Uidedittext);
+        updateuserinfo = findViewById(R.id.updateuserinfo);
         binding = ActivityUpdateuserinfoBinding.inflate(getLayoutInflater());
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
         bottomNavigationView.setLabelVisibilityMode(bottomNavigationView.LABEL_VISIBILITY_LABELED);
+
+        updateuserinfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openupdate();
+            }
+        });
 
         bottomNavigationView.setOnItemSelectedListener(item -> {
 
@@ -91,6 +103,7 @@ public class Updateuserinfo extends AppCompatActivity {
         });
 
     }
+
     private void showPopupMenu(BottomNavigationView bottomNavView) {
         PopupMenu popupMenu = new PopupMenu(this, bottomNavView, Gravity.END);
         popupMenu.getMenuInflater().inflate(R.menu.popup_menu, popupMenu.getMenu());
@@ -148,6 +161,7 @@ public class Updateuserinfo extends AppCompatActivity {
         });
         popupMenu.show();
     }
+
     public void resetPassword(View view) {
         String email = emailEditText.getText().toString().trim();
 
@@ -170,6 +184,9 @@ public class Updateuserinfo extends AppCompatActivity {
 
 
     }
+
+
+
     @Override
     protected void onStart() {
         super.onStart();
@@ -184,13 +201,17 @@ public class Updateuserinfo extends AppCompatActivity {
             String userName = currentUser.getPhoneNumber();
 
             // Set email and UID in TextViews
-            emailTextView.setText("Email: " + userEmail);
-            uidTextView.setText("UID: " + userUid);
-            displayTextView.setText("DispalyName " + userName) ;
+
+            email.setText(userEmail);
+            uid.setText(userUid);
         } else {
             // No user is signed in, handle this case if needed
         }
     }
-        }
+    private void openupdate() {
+        Toast.makeText(this, "User Information saved", Toast.LENGTH_SHORT).show();
+    }
+
+}
 
 

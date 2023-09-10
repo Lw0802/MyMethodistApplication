@@ -1,32 +1,58 @@
 package com.example.mymethodistapplication;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.view.Gravity;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.PopupMenu;
+import android.widget.TextView;
+import android.widget.Toast;
 
-import com.example.mymethodistapplication.databinding.ActivityChooseLanguageBinding;
-import com.example.mymethodistapplication.databinding.ActivityHelpBinding;
+import com.example.mymethodistapplication.databinding.ActivityAbout1Binding;
+import com.example.mymethodistapplication.databinding.ActivityChangePasswordBinding;
+import com.example.mymethodistapplication.databinding.ActivityForgotPasswordBinding;
+import com.example.mymethodistapplication.databinding.ActivityUpdateuserinfoBinding;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.auth.AuthCredential;
+import com.google.firebase.auth.EmailAuthProvider;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
-public class Help extends AppCompatActivity {
+import org.w3c.dom.Text;
 
+public class ChangePassword extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
-    @NonNull
-    ActivityHelpBinding binding;
+    ActivityChangePasswordBinding binding;
 
+    private EditText newEmailEditText;
+    private EditText passwordEditText;
+    private FirebaseAuth mAuth;
+    private EditText emailEditText;
+    private TextView testtext;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_help);
+        setContentView(R.layout.activity_change_password);
 
-        binding = ActivityHelpBinding.inflate(getLayoutInflater());
+
+        FirebaseAuth auth = FirebaseAuth.getInstance();
+        FirebaseUser currentUser = auth.getCurrentUser();
+
+        mAuth = FirebaseAuth.getInstance();
+        emailEditText = findViewById(R.id.emailEditText);
+
+        binding = ActivityChangePasswordBinding.inflate(getLayoutInflater());
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
         bottomNavigationView.setLabelVisibilityMode(bottomNavigationView.LABEL_VISIBILITY_LABELED);
+
         bottomNavigationView.setOnItemSelectedListener(item -> {
 
             if (item.getItemId() == R.id.sermons_nav) {
@@ -56,9 +82,9 @@ public class Help extends AppCompatActivity {
 
             return false;
         });
-    }
 
-    private void showPopupMenu (BottomNavigationView bottomNavView){
+    }
+    private void showPopupMenu(BottomNavigationView bottomNavView) {
         PopupMenu popupMenu = new PopupMenu(this, bottomNavView, Gravity.END);
         popupMenu.getMenuInflater().inflate(R.menu.popup_menu, popupMenu.getMenu());
 
@@ -73,12 +99,12 @@ public class Help extends AppCompatActivity {
                     return true;
                 }
                 if (itemId == R.id.nav_Join_Us) {
-                    Intent intent = new Intent(Help.this, JoinMinistryActivity.class);
+                    Intent intent = new Intent(ChangePassword.this, JoinMinistryActivity.class);
                     startActivity(intent);
                     return true;
                 }
                 if (itemId == R.id.nav_Appointments) {
-                    Intent intent = new Intent(Help.this, AppointmentsActivity.class);
+                    Intent intent = new Intent(ChangePassword.this, AppointmentsActivity.class);
                     startActivity(intent);
                     return true;
                 }
@@ -92,13 +118,16 @@ public class Help extends AppCompatActivity {
                     return true;
                 }
                 if (itemId == R.id.nav_Photos) {
+
+                    Intent intent = new Intent(ChangePassword.this, Photos3.class);
+                    startActivity(intent);
                     return true;
                 }
                 if (itemId == R.id.nav_Volunteer) {
                     return true;
                 }
                 if (itemId == R.id.nav_About) {
-                    Intent intent = new Intent(Help.this, ChooseLanguage.class);
+                    Intent intent = new Intent(ChangePassword.this, About1.class);
                     startActivity(intent);
                     return true;
                 }
@@ -112,4 +141,27 @@ public class Help extends AppCompatActivity {
         });
         popupMenu.show();
     }
+    public void resetPassword(View view) {
+        String email = emailEditText.getText().toString().trim();
+
+        if (email.isEmpty()) {
+            Toast.makeText(this, "Please enter your email address", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        mAuth.sendPasswordResetEmail(email)
+                .addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        if (task.isSuccessful()) {
+                            Toast.makeText(ChangePassword.this, "Password reset email sent", Toast.LENGTH_SHORT).show();
+                        } else {
+                            Toast.makeText(ChangePassword.this, "Failed to send reset email. Please check your email address.", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
     }
+
+}
+
+

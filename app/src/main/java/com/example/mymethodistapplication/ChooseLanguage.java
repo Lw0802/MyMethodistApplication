@@ -13,9 +13,11 @@ import android.widget.ImageView;
 import android.widget.PopupMenu;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.mymethodistapplication.databinding.ActivityChooseLanguageBinding;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.example.mymethodistapplication.databinding.ActivityAbout1Binding;
-import com.example.mymethodistapplication.databinding.ActivityChangeLanguageBinding;
+import com.example.mymethodistapplication.databinding.ActivityChooseLanguageBinding;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -26,20 +28,20 @@ import com.squareup.picasso.Picasso;
 public class ChooseLanguage extends AppCompatActivity {
 
     BottomNavigationView bottomNavigationView;
-    ActivityChangeLanguageBinding binding;
+     ActivityChooseLanguageBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose_language);
 
-        binding = ActivityChangeLanguageBinding.inflate(getLayoutInflater());
+        binding = ActivityChooseLanguageBinding.inflate(getLayoutInflater());
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
         bottomNavigationView.setLabelVisibilityMode(bottomNavigationView.LABEL_VISIBILITY_LABELED);
 
         LanguageManager lang = new LanguageManager(this);
 
-        TextView afrikaanstext  = findViewById(R.id.afrikaanstext);
+        TextView afrikaanstext = findViewById(R.id.afrikaanstext);
         afrikaanstext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -49,7 +51,7 @@ public class ChooseLanguage extends AppCompatActivity {
         });
 
 
-        TextView englishtext  = findViewById(R.id.englishtext);
+        TextView englishtext = findViewById(R.id.englishtext);
         englishtext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -59,11 +61,20 @@ public class ChooseLanguage extends AppCompatActivity {
         });
 
 
-        TextView zulustext  = findViewById(R.id.zulutext);
+        TextView zulustext = findViewById(R.id.zulutext);
         zulustext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                lang.updateResource("hi");
+                lang.updateResource("zu");
+                recreate();
+            }
+        });
+
+        TextView spanishtext = findViewById(R.id.spanishtext);
+        spanishtext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                lang.updateResource("es");
                 recreate();
             }
         });
@@ -82,8 +93,7 @@ public class ChooseLanguage extends AppCompatActivity {
                 overridePendingTransition(0, 0);
                 return true;
             } else if (item.getItemId() == R.id.menu_nav) {
-
-                showPopupMenu(bottomNavigationView);
+                                showPopupMenu(bottomNavigationView);
 
                 return true;
             } else if (item.getItemId() == R.id.home_nav) {
@@ -98,49 +108,6 @@ public class ChooseLanguage extends AppCompatActivity {
         });
 
 
-
-
-        // Define an array of ImageViews
-        ImageView[] imageViews = new ImageView[4]; // Replace 3 with the number of ImageViews you have
-
-// Assign the ImageViews by their unique IDs
-        imageViews[0] = findViewById(R.id.lang1); // Replace with your ImageView IDs
-        imageViews[1] = findViewById(R.id.lang2);
-        imageViews[2] = findViewById(R.id.lang3);
-        imageViews[3] = findViewById(R.id.lang4);
-
-        FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
-        DatabaseReference databaseReference = firebaseDatabase.getReference();
-        DatabaseReference imagesReference = databaseReference.child("Images");
-
-        imagesReference.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                int index = 0;
-
-                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
-                    String link = snapshot.getValue(String.class);
-
-                    // Check if the index is within the range of your ImageViews array
-                    if (index < imageViews.length) {
-                        // Load the image into the corresponding ImageView
-                        Picasso.get().load(link).into(imageViews[index]);
-                        index++;
-                    } else {
-                        // Handle the case where you have more image URLs than ImageViews
-                        break;
-                    }
-                }
-
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-
-
-        });
     }
 
     private void showPopupMenu (BottomNavigationView bottomNavView){

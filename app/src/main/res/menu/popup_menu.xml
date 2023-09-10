@@ -1,38 +1,38 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/nav_Comm_Chat"
-        android:title="Community Chat"
+        android:title="@string/popupmenu1"
         />
 
     <item android:id="@+id/nav_Donations"
-        android:title="Donations"
+        android:title="@string/popupmenu2"
         />
 
     <item android:id="@+id/nav_Photos"
-        android:title="Photos"
+        android:title="@string/popupmenu3"
         />
 
     <item android:id="@+id/nav_Volunteer"
-        android:title="Volunteer"
+        android:title="@string/popupmenu4"
         />
 
     <item android:id="@+id/nav_About"
-        android:title="About Us"
+        android:title="@string/popupmenu5"
         />
 
     <item android:id="@+id/nav_Join_Us"
-        android:title="Join Us"
+        android:title="@string/popupmenu6"
         />
 
     <item android:id="@+id/nav_Appointments"
-        android:title="Appointments"
+        android:title="@string/popupmenu7"
         />
 
     <item android:id="@+id/nav_Account"
-        android:title="Account"
+        android:title="@string/popupmenu8"
         />
 
     <item android:id="@+id/nav_Log_Out"
-        android:title="Log Out"
+        android:title="@string/popupmenu9"
         android:icon="@drawable/baseline_logout_24"
         />
 </menu>

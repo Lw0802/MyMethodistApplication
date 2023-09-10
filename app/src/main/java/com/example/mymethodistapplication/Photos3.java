@@ -64,7 +64,7 @@ public class Photos3 extends AppCompatActivity {
                 heading.setText("2023");
 
             } else if (choice == 1) {
-                choice2 = "Images";
+                choice2 = "Images2";
                 heading.setText("2022");
             }
         }
