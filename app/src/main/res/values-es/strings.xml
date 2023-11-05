@@ -1,4 +1,105 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">MyMethodistApplication</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="next">Próximo</string>
+    <string name="previous">Previo</string>
+
+    <!--About 1 History-->
+    <string name="About1"> GraceWell Methodist Church has a rich history that dates back to the late 19th century. It was founded in the small town of Graceville in the heartland of the United States. The church was established by a group of dedicated Methodist followers who were inspired by the teachings of John Wesley and sought to spread the message of God\'s grace and love. </string>
+    <string name="About1p2">In 1885, a humble wooden structure was constructed as the first place of worship for GraceWell Methodist Church.</string>
+    <!---<string name="About1p3">In the mid-1960s, GraceWell Methodist Church underwent a significant expansion, with a modern sanctuary being built to accommodate the growing congregation. This expansion allowed for the addition of various ministries, including youth groups, women\'s groups, and community service initiatives</string>-->
+    <string name="About1p4">The early congregation faced numerous challenges, including limited resources and a small membership. However, their unwavering faith and determination allowed the church to grow steadily over the years</string>
+
+    <!--About 1 History-->
+    <string name="About2p1">The mission of GraceWell Methodist Church is to serve as a beacon of Gods grace and love in the community and beyond. The church is committed to fulfilling the teachings of Jesus Christ and the principles of Methodism</string>
+    <string name="About2p2">GraceWell Methodist Church aims to provide a nurturing environment for worship, prayer, and spiritual growth.</string>
+    <string name="About2p3"> It seeks to foster a deep and meaningful relationship with God through inspiring worship services, Bible study groups, prayer gatherings, and spiritual retreats..</string>
+    <string name="About2p4">It seeks to foster a deep and meaningful relationship with God through inspiring worship services, Bible study groups, prayer gatherings, and spiritual retreats.The church is dedicated to equipping its members with the knowledge and understanding of Christian faith through various educational programs. It actively serves the community through outreach programs, addressing social justice issues, and partnering with other organizations. GraceWell Methodist Church strives to create an inclusive and welcoming environment where diversity is embraced.</string>
+
+    <!--About 3 History-->
+    <string name="About3p1">These beliefs are rooted in the teachings of John Wesley and emphasize the importance of a deep relationship with God, active service to others, and a commitment to social justice.</string>
+    <string name="About3p2">While there may be variations among individual Methodist churches, these beliefs provide a general framework for the Methodist tradition.</string>
+    <string name="About3p3">Methodists hold to core beliefs and doctrines including the belief in the Triune God, salvation by grace through faith, the integration of faith and good works, the authority of Scripture and tradition, the observance of baptism and Holy Communion, engagement in social justice and outreach, the pursuit of personal holiness, and spiritual growth. </string>
+    <!--About 4 History-->
+    <string name="About4p1">Faith is a fundamental aspect of the beliefs and teachings of Methodism, including GraceWell Methodist Church. Heres a closer look at the role of faith within the Methodist tradition:</string>
+    <string name="About4p2">Faith is a fundamental aspect of the beliefs and teachings of Methodism, including GraceWell Methodist Church. Heres a closer look at the role of faith within the Methodist tradition:</string>
+    <string name="About4p3">Faith in God: Methodists place a strong emphasis on faith in God as the foundation of their spiritual journey. They believe in a personal relationship with God, grounded in trust and reliance on Gods love, grace, and guidance. Faith involves acknowledging Gods presence, surrendering to Gods will, and seeking to align ones life with Gods purposes.</string>
+    <string name="About3p4">Faith in Jesus Christ: Methodists affirm faith in Jesus Christ as Lord and Savior. They believe that Jesus, through his life, death, and resurrection, offers salvation and reconciliation with God. Faith in Jesus involves accepting him as the Son of God, following his teachings, and trusting in his redemptive work</string>
+
+    <string name="changepassword1">Change Language</string>
+    <string name="changepassword2">Languages we support</string>
+
+    <string name="popupmenu1">Commnuity Chat</string>
+    <string name="popupmenu2">Donations</string>
+    <string name="popupmenu3">Photos</string>
+    <string name="popupmenu4">Volunteer</string>
+    <string name="popupmenu5">About Us</string>
+    <string name="popupmenu6">Join Us</string>
+    <string name="popupmenu7">Appointments</string>
+    <string name="popupmenu8">Account</string>
+    <string name="popupmenu9">Log Out</string>
+
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="sun">SUN</string>
+    <string name="mon">MON</string>
+    <string name="tue">TUE</string>
+    <string name="wed">WED</string>
+    <string name="thur">THUR</string>
+    <string name="fri">FRI</string>
+    <string name="sat">SAT</string>
+    <string name="address" translatable="false" />
+    <string name="About1p3">In the mid-1960s, GraceWell Methodist Church underwent a significant expansion, with a modern sanctuary being built to accommodate the growing congregation. This expansion allowed for the addition of various ministries, including youth groups, women\'s groups, and community service initiatives</string>
+
+    <!--- Main Navigation Headings-->
+    <string name="sermonsmenu">Sermons</string>
+    <string name="contactmenu">Contact Us</string>
+    <string name="homesmenu">Home</string>
+    <string name="eventsmenu">Events</string>
+    <string name="menumenu">Menu</string>
+
+    <!--- About 1 Headings-->
+    <string name="about1mainheading">History</string>
+    <string name="about1subheading1">History</string>
+    <string name="about1subheading2">Mission</string>
+    <string name="about1subheading3">Beliefs</string>
+    <string name="about1subheading4">Faith</string>
+    <string name="about1subheading5">Staff</string>
+
+
+    <string name="changelangheading">Change Language</string>
+    <string name="changelangh2">Languages that we support</string>
+    <string name="changelangh3">English</string>
+    <string name="changelangh4">Afrikaans</string>
+    <string name="changelangh5">Zulu</string>
+    <string name="changelangh6">Spanish</string>
+
+    <string name="accounth">Account</string>
+    <string name="accounth1">Update Personal Information</string>
+    <string name="accounth2">Change Password</string>
+    <string name="accounth3">Change Username</string>
+    <string name="accounth4">Manage Requests</string>
+    <string name="accounth5">Notifications</string>
+    <string name="accounth6">Change Language</string>
+    <string name="accounth7">Help &amp; FAQS</string>
+    <string name="changelangheading2">Languages we Support\n</string>
+    <string name="changelangheading1">Change Language</string>
+
+    <string name="newsandupdates">Noticias y Actualizaciones</string>
+    <string name="homedate">Lunes 21 de Agosto de 2023</string>
+    <string name="homebutton1">Versículo Diario en Facebook</string>
+    <string name="homebutton2">Nuestra Página de Facebook</string>
+    <string name="homebutton3">Nuestro Canal de YouTube</string>
+    <string name="homebutton4">Los SermoneS Dominicales se Transmiten en Vivo Todos los Domingos (8 am - 10 am) en Facebook</string>
+
 </resources>

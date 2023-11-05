@@ -16,15 +16,17 @@
         android:layout_centerInParent="true"
         android:layout_marginTop="35dp"
         android:layout_marginEnd="97dp"
-        android:text="Account"
+        android:text="@string/accounth"
         android:textSize="26dp" />
 
     <TextView
         android:id="@+id/changepassword"
         android:layout_width="175dp"
         android:layout_height="35dp"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
+        android:layout_marginStart="128dp"
         android:layout_marginTop="277dp"
         android:layout_marginEnd="108dp"
         android:text="@string/accounth2"
@@ -55,12 +57,14 @@
 
     <TextView
         android:id="@+id/changelanguage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="175dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="443dp"
-        android:layout_marginEnd="136dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="441dp"
+        android:layout_marginEnd="111dp"
         android:text="@string/accounth6"
         android:textSize="18dp" />
 
@@ -77,12 +81,14 @@
 
     <TextView
         android:id="@+id/notifications"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="175dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="360dp"
-        android:layout_marginEnd="179dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="364dp"
+        android:layout_marginEnd="112dp"
         android:text="@string/accounth5"
         android:textSize="18dp" />
 
@@ -99,13 +105,15 @@
 
     <TextView
         android:id="@+id/help"
-        android:layout_width="121dp"
-        android:layout_height="wrap_content"
+        android:layout_width="175dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="536dp"
-        android:layout_marginEnd="157dp"
-        android:text="Help &amp; FAQS"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="534dp"
+        android:layout_marginEnd="102dp"
+        android:text="@string/accounth7"
         android:textSize="18dp" />
 
     <ImageView
@@ -123,8 +131,10 @@
         android:id="@+id/updateinfotext"
         android:layout_width="279dp"
         android:layout_height="48dp"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
+        android:layout_marginStart="131dp"
         android:layout_marginTop="197dp"
         android:layout_marginEnd="1dp"
         android:clickable="true"

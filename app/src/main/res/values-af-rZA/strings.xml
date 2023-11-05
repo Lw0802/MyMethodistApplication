@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="about1mainheading">Geskiedenis</string>
     <string name="about1subheading1">Geskiedenis</string>
     <string name="about1subheading2">Sending</string>
@@ -11,17 +11,17 @@
     <string name="changelangh2">Tale wat ons ondersteunt</string>
     <string name="changelangh3">Engelsh</string>
     <string name="changelangh4">Afrikaans</string>
-    <string name="changelangh5">Arabies</string>
-    <string name="changelangh6">Hindi</string>
+    <string name="changelangh5">Zulu</string>
+    <string name="changelangh6">Spanish</string>
 
-    <string name="accounth">Account</string>
-    <string name="accounth1">Update Personal Information</string>
-    <string name="accounth2">Change Password</string>
-    <string name="accounth3">Change Username</string>
+    <string name="accounth">Rekening</string>
+    <string name="accounth1">Dateer persoonlike inligting op</string>
+    <string name="accounth2">Verander wagwoord</string>
+    <string name="accounth3">Verander gebruikersnaam</string>
     <string name="accounth4">Manage Requests</string>
-    <string name="accounth5">Notifications</string>
-    <string name="accounth6">Change Language</string>
-    <string name="accounth7">Help</string>
+    <string name="accounth5">Kennisgewings</string>
+    <string name="accounth6">Verander taal</string>
+    <string name="accounth7">Hulp &amp; Gereelde Vrae</string>
 
 
     <string name="sermonsmenu">Preke</string>
@@ -63,4 +63,29 @@
     <string name="About4p2">Geloof is \'n fundamentele aspek van die oortuigings en leerstellings van Metodisme, insluitend GraceWell Methodiste Kerk. Hier is \'n nader kyk na die rol van geloof binne die Metodiste-tradisie:</string>
     <string name="About4p3">Geloof in God: Metodiste plaas \'n sterk klem op geloof in God as die grondslag van hul geestelike reis. Hulle glo in \'n persoonlike verhouding met God, gegrond op vertroue en vertroue op God se liefde, genade en leiding. Geloof behels die erkenning van God se teenwoordigheid, oorgee aan God se wil, en die poging om jou lewe in lyn te bring met God se doelwitte.</string>
     <string name="About3p4">Geloof in Jesus Christus: Metodiste bevestig geloof in Jesus Christus as Here en Verlosser. Hulle glo dat Jesus deur sy lewe, dood en opstanding verlossing en versoening met God bied. Geloof in Jesus behels om hom as die Seun van God te aanvaar, sy leringe te volg en op sy verlossingswerk te vertrou</string>
+
+
+    <string name="changepassword1">Verander taal</string>
+
+    <string name="popupmenu1">Gemeenskapklets</string>
+    <string name="popupmenu2">Skenkings</string>
+    <string name="popupmenu3">Foto\'s</string>
+    <string name="popupmenu4">Vrywilliger</string>
+    <string name="popupmenu5">Oor ons</string>
+    <string name="popupmenu6">Sluit by ons aan</string>
+    <string name="popupmenu7">Aanstellings</string>
+    <string name="popupmenu8">Rekening</string>
+    <string name="popupmenu9">Teken uit</string>
+    <string name="changepassword2">Tale wat ons ondersteun</string>
+    <string name="changelangheading2">Tale wat ons ondersteun</string>
+    <string name="changelangheading1">Verander taal</string>
+
+    <!--- Home Page -->
+    <string name="newsandupdates">Nuus en Bywerkings</string>
+    <string name="homedate">Maandag 21 Augustus 2023</string>
+    <string name="homebutton1">Daaglikse Vers op Facebook</string>
+    <string name="homebutton2">Ons Facebookbladsy</string>
+    <string name="homebutton3">Ons YouTube-kanaal</string>
+    <string name="homebutton4">Sondagse Preke word elke Sondag aanlyn uitgesaai (8vm - 10vm) op Facebook</string>
+
 </resources>

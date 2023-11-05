@@ -21,7 +21,7 @@
         android:layout_marginTop="286dp"
         android:layout_marginEnd="29dp"
         android:layout_marginBottom="427dp"
-        android:text="Welcome To The All New Gracewell Methodist Church Mobile Application"
+        android:text="@string/landingheading1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,7 +39,7 @@
         android:layout_marginTop="452dp"
         android:layout_marginEnd="35dp"
         android:layout_marginBottom="266dp"
-        android:text="Do not forget to show hospitality to strangers, for by so doing some people have shown hospitality to angels without knowing it.(Hebrews 13:2)"
+        android:text="@string/landingheading2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,15 +47,15 @@
 
     <TextView
         android:id="@+id/WelcomeText2"
-        android:layout_width="150dp"
-        android:layout_height="52dp"
+        android:layout_width="151dp"
+        android:layout_height="86dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="552dp"
-        android:layout_marginEnd="118dp"
-        android:layout_marginBottom="181dp"
-        android:text="We Welcome You All"
+        android:layout_marginEnd="117dp"
+        android:layout_marginBottom="276dp"
+        android:text="@string/landingwelcome"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -73,26 +73,36 @@
         tools:layout_editor_absoluteY="-10dp" />
 
     <Button
-        android:id="@+id/LoginButton"
-        android:layout_width="340dp"
-        android:layout_height="67dp"
-        android:layout_above="@id/SignUpButton"
-        android:layout_centerVertical="true"
-        android:layout_marginTop="332dp"
-        android:layout_marginBottom="12dp"
+        android:id="@+id/show_popup_menu_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="142dp"
+        android:layout_marginBottom="18dp"
         android:backgroundTint="#2792C4"
-        android:layout_centerHorizontal="true"
-        android:text="Login" />
+        android:text="Change Language" />
 
     <Button
         android:id="@+id/SignUpButton"
         android:layout_width="342dp"
         android:layout_height="66dp"
-        android:backgroundTint="#2792C4"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:layout_marginBottom="39dp"
-        android:text="Sign Up" />
+        android:layout_marginBottom="92dp"
+        android:backgroundTint="#2792C4"
+        android:text="@string/landingbutton2" />
+
+    <Button
+        android:id="@+id/LoginButton"
+        android:layout_width="340dp"
+        android:layout_height="67dp"
+        android:layout_above="@id/SignUpButton"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="332dp"
+        android:layout_marginBottom="13dp"
+        android:backgroundTint="#2792C4"
+        android:text="@string/landingbutton1" />
 
 </RelativeLayout>
 

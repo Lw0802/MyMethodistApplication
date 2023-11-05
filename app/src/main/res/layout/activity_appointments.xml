@@ -1,62 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AppointmentsActivity"
     android:background="@color/white"
-    android:id="@+id/AppointmentPage"
-    android:orientation="vertical">
+    android:id="@+id/AppointmentPage">
 
+    <!-- Toolbar -->
     <androidx.appcompat.widget.Toolbar
-
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minHeight="?attr/actionBarSize"
         android:theme="@style/ThemeOverlay.AppCompat.Dark"/>
 
+    <!-- Email Address (EditText) -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_text_to"
+        android:inputType="textEmailAddress"
+        android:text="info@gracewell.co.za"
+        android:visibility="gone"
+        android:layout_below="@id/toolbar"/>
 
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/edit_text_to"
-            android:inputType="textEmailAddress"
-            android:text="info@gracewell.co.za"
-            android:visibility="gone"/>
+    <!-- Subject TextView -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Subject:"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_below="@id/edit_text_to"
         android:layout_gravity="top"/>
 
-
+    <!-- Subject (EditText) -->
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/edit_text_subject" />
+        android:id="@+id/edit_text_subject"
+        android:layout_below="@id/subjectTextView"/>
 
+    <!-- Message TextView -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Message:"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_below="@id/edit_text_subject"/>
 
+    <!-- Message (EditText) -->
+
+    <!-- Buttons (LinearLayout) -->
+
+    <!-- Bottom Navigation View -->
 
     <EditText
+        android:id="@+id/edit_text_message"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/edit_text_message"
-        android:lines="15"/>
-
+        android:layout_below="@id/messageTextView"
+        android:lines="15" />
 
     <LinearLayout
         android:id="@+id/content"
         android:layout_width="match_parent"
         android:layout_height="200dp"
+        android:layout_below="@id/edit_text_message"
+        android:layout_marginTop="292dp"
         android:layout_weight="1"
         android:orientation="horizontal">
 
@@ -77,14 +90,12 @@
 
     </LinearLayout>
 
-
-
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        app:menu="@menu/bottom_nav_bar">
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
+        app:menu="@menu/bottom_nav_bar"
+        android:layout_alignParentBottom="true"/>
 
-</LinearLayout>
+</RelativeLayout>

@@ -5,9 +5,11 @@ import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.PopupMenu;
 import android.widget.Toast;
 import android.Manifest;
 import androidx.activity.result.ActivityResultLauncher;
@@ -33,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     ActivityMainBinding binding;
    Button LoginButton;
     Button SignUpButton;
-
+    Button showPopupMenuButton;
     ImageView rimage;
 
 
@@ -48,60 +50,59 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
-        SignUpButton =(Button) findViewById(R.id.SignUpButton);
-        SignUpButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openRegisterPage();
-            }
-        });
-
-        LoginButton =(Button) findViewById(R.id.LoginButton);
-        LoginButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openLoginActivity();
-            }
-        });
-
-        // Start of showing image from database
-        // getting ImageView by its id
-        rimage = findViewById(R.id.rImage);
-
-        // we will get the default FirebaseDatabase instance
-        FirebaseDatabase firebaseDatabase
-                = FirebaseDatabase.getInstance();
-
-        // we will get a DatabaseReference for the database
-        // root node
-        DatabaseReference databaseReference
-                = firebaseDatabase.getReference();
-
-        // Here "image" is the child node value we are
-        // getting child node data in the getImage variable
-        DatabaseReference getImage
-                = databaseReference.child("churchlogo");
-
-        // Adding listener for a single change
-        // in the data at this location.
-        // this listener will triggered once
-        // with the value of the data at the location
-        getImage.addListenerForSingleValueEvent(
-                new ValueEventListener() {
+                SignUpButton = (Button) findViewById(R.id.SignUpButton);
+                SignUpButton.setOnClickListener(new View.OnClickListener() {
                     @Override
-                    public void onDataChange(
-                            @NonNull DataSnapshot dataSnapshot) {
-                        // getting a DataSnapshot for the
-                        // location at the specified relative
-                        // path and getting in the link variable
-                        String link = dataSnapshot.getValue(
-                                String.class);
-
-                        // loading that data into rImage
-                        // variable which is ImageView
-                        Picasso.get().load(link).into(rimage);
+                    public void onClick(View v) {
+                        openRegisterPage();
                     }
+                });
+
+                LoginButton = (Button) findViewById(R.id.LoginButton);
+                LoginButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        openLoginActivity();
+                    }
+                });
+
+                // Start of showing image from database
+                // getting ImageView by its id
+                rimage = findViewById(R.id.rImage);
+
+                // we will get the default FirebaseDatabase instance
+                FirebaseDatabase firebaseDatabase
+                        = FirebaseDatabase.getInstance();
+
+                // we will get a DatabaseReference for the database
+                // root node
+                DatabaseReference databaseReference
+                        = firebaseDatabase.getReference();
+
+                // Here "image" is the child node value we are
+                // getting child node data in the getImage variable
+                DatabaseReference getImage
+                        = databaseReference.child("churchlogo");
+
+                // Adding listener for a single change
+                // in the data at this location.
+                // this listener will triggered once
+                // with the value of the data at the location
+                getImage.addListenerForSingleValueEvent(
+                        new ValueEventListener() {
+                            @Override
+                            public void onDataChange(
+                                    @NonNull DataSnapshot dataSnapshot) {
+                                // getting a DataSnapshot for the
+                                // location at the specified relative
+                                // path and getting in the link variable
+                                String link = dataSnapshot.getValue(
+                                        String.class);
+
+                                // loading that data into rImage
+                                // variable which is ImageView
+                                Picasso.get().load(link).into(rimage);
+                            }
 
                     // this will called when any problem
                     // occurs in getting data
@@ -145,8 +146,8 @@ public class MainActivity extends AppCompatActivity {
                 // Directly ask for the permission
                 requestPermissionLauncher.launch(Manifest.permission.POST_NOTIFICATIONS);
             }
-        }
-    }
+        }}
+
 
 
     private void openLoginActivity() {
@@ -158,4 +159,6 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this,RegisterPage.class);
         startActivity(intent);
     }
+
+
 }

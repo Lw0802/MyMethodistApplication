@@ -1,185 +1,190 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Photos1">
-    <View
-        android:id="@+id/myRectangleView5"
-        android:layout_width="359dp"
-        android:layout_height="158dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="412dp"
-        android:layout_marginEnd="21dp"
-        android:background="@drawable/rectangle" />
 
-    <View
-        android:id="@+id/myRectangleView6"
-        android:layout_width="359dp"
-        android:layout_height="158dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="576dp"
-        android:layout_marginEnd="21dp"
-        android:background="@drawable/rectangle" />
 
-    <ImageView
-        android:id="@+id/imageView18"
-        android:layout_width="140dp"
-        android:layout_height="120dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="598dp"
-        android:layout_marginEnd="227dp"
-        app:srcCompat="@drawable/folders" />
 
-    <ImageView
-        android:id="@+id/imageView17"
-        android:layout_width="140dp"
-        android:layout_height="120dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="598dp"
-        android:layout_marginEnd="227dp"
-        app:srcCompat="@drawable/folders" />
 
-    <TextView
-        android:id="@+id/textView42"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="472dp"
-        android:layout_marginEnd="106dp"
-        android:text="2021"
-        android:textSize="30dp" />
+<View
+    android:id="@+id/myRectangleView5"
+    android:layout_width="359dp"
+    android:layout_height="158dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginTop="412dp"
+    android:layout_marginEnd="21dp"
+    android:background="@drawable/rectangle" />
 
-    <ImageView
-        android:id="@+id/imageView15"
-        android:layout_width="140dp"
-        android:layout_height="120dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="434dp"
-        android:layout_marginEnd="227dp"
-        app:srcCompat="@drawable/folders" />
+<View
+    android:id="@+id/myRectangleView6"
+    android:layout_width="359dp"
+    android:layout_height="158dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginTop="576dp"
+    android:layout_marginEnd="21dp"
+    android:background="@drawable/rectangle" />
 
-    <TextView
-        android:id="@+id/textView43"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="636dp"
-        android:layout_marginEnd="107dp"
-        android:text="2020"
-        android:textSize="30dp" />
+<ImageView
+    android:id="@+id/imageView18"
+    android:layout_width="140dp"
+    android:layout_height="120dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginTop="598dp"
+    android:layout_marginEnd="227dp"
+    app:srcCompat="@drawable/folders" />
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_gravity="bottom"
-        android:layout_marginBottom="0dp"
-        android:elevation="10dp"
-        app:menu="@menu/bottom_nav_bar"></com.google.android.material.bottomnavigation.BottomNavigationView>
+<ImageView
+    android:id="@+id/imageView17"
+    android:layout_width="140dp"
+    android:layout_height="120dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginTop="598dp"
+    android:layout_marginEnd="227dp"
+    app:srcCompat="@drawable/folders" />
 
-    <ImageView
-        android:id="@+id/imageView16"
-        android:layout_width="140dp"
-        android:layout_height="120dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="434dp"
-        android:layout_marginEnd="227dp"
-        app:srcCompat="@drawable/folders" />
+<TextView
+    android:id="@+id/textView42"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginTop="472dp"
+    android:layout_marginEnd="106dp"
+    android:text="2021"
+    android:textSize="30dp" />
 
-    <View
-        android:id="@+id/myRectangleView3"
-        android:layout_width="359dp"
-        android:layout_height="158dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="241dp"
-        android:layout_marginEnd="22dp"
-        android:background="@drawable/rectangle" />
+<ImageView
+    android:id="@+id/imageView15"
+    android:layout_width="140dp"
+    android:layout_height="120dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginTop="434dp"
+    android:layout_marginEnd="227dp"
+    app:srcCompat="@drawable/folders" />
 
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="140dp"
-        android:layout_height="120dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="263dp"
-        android:layout_marginEnd="228dp"
-        app:srcCompat="@drawable/folders" />
+<TextView
+    android:id="@+id/textView43"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginTop="636dp"
+    android:layout_marginEnd="107dp"
+    android:text="2020"
+    android:textSize="30dp" />
 
-    <TextView
-        android:id="@+id/Y2022"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="301dp"
-        android:layout_marginEnd="105dp"
-        android:text="2022"
-        android:textSize="30dp" />
+<com.google.android.material.bottomnavigation.BottomNavigationView
+    android:id="@+id/bottomNavigationView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_gravity="bottom"
+    android:layout_marginBottom="0dp"
+    android:elevation="10dp"
+    app:menu="@menu/bottom_nav_bar"></com.google.android.material.bottomnavigation.BottomNavigationView>
 
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="140dp"
-        android:layout_height="120dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="263dp"
-        android:layout_marginEnd="228dp"
-        app:srcCompat="@drawable/folders" />
+<ImageView
+    android:id="@+id/imageView16"
+    android:layout_width="140dp"
+    android:layout_height="120dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginTop="434dp"
+    android:layout_marginEnd="227dp"
+    app:srcCompat="@drawable/folders" />
 
-    <TextView
-        android:id="@+id/textView36"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="183dp"
-        android:text="Years"
-        android:textSize="26sp" />
+<View
+    android:id="@+id/myRectangleView3"
+    android:layout_width="359dp"
+    android:layout_height="158dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginTop="241dp"
+    android:layout_marginEnd="22dp"
+    android:background="@drawable/rectangle" />
 
-    <View
-        android:id="@+id/myRectangleView2"
-        android:layout_width="359dp"
-        android:layout_height="158dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="61dp"
-        android:layout_marginEnd="24dp"
-        android:background="@drawable/rectangle" />
+<ImageView
+    android:id="@+id/imageView10"
+    android:layout_width="140dp"
+    android:layout_height="120dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginTop="263dp"
+    android:layout_marginEnd="228dp"
+    app:srcCompat="@drawable/folders" />
 
-    <TextView
-        android:id="@+id/Y2023"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="121dp"
-        android:layout_marginEnd="106dp"
-        android:text="2023"
-        android:textSize="30dp" />
+<TextView
+    android:id="@+id/Y2022"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginTop="301dp"
+    android:layout_marginEnd="105dp"
+    android:text="2022"
+    android:textSize="30dp" />
 
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="140dp"
-        android:layout_height="120dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="83dp"
-        android:layout_marginEnd="230dp"
-        app:srcCompat="@drawable/folders" />
+<ImageView
+    android:id="@+id/imageView9"
+    android:layout_width="140dp"
+    android:layout_height="120dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginTop="263dp"
+    android:layout_marginEnd="228dp"
+    app:srcCompat="@drawable/folders" />
+
+<TextView
+    android:id="@+id/textView36"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:layout_centerInParent="true"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="183dp"
+    android:text="Years"
+    android:textSize="26sp" />
+
+<View
+    android:id="@+id/myRectangleView2"
+    android:layout_width="359dp"
+    android:layout_height="158dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginTop="61dp"
+    android:layout_marginEnd="24dp"
+    android:background="@drawable/rectangle" />
+
+<TextView
+    android:id="@+id/Y2023"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginTop="121dp"
+    android:layout_marginEnd="106dp"
+    android:text="2023"
+    android:textSize="30dp" />
+
+<ImageView
+    android:id="@+id/imageView8"
+    android:layout_width="140dp"
+    android:layout_height="120dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginTop="83dp"
+    android:layout_marginEnd="230dp"
+    app:srcCompat="@drawable/folders" />
 
 
 

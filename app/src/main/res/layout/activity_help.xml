@@ -29,12 +29,12 @@
         android:textSize="26dp" />
 
     <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="716dp"
+        android:layout_width="match_parent"
+        android:layout_height="759dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="68dp"
-        android:layout_marginEnd="7dp">
+        android:layout_marginEnd="0dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -100,6 +100,8 @@
                 android:paddingBottom="10dp"
                 android:text="A: If you forget your username or email, you can usually recover it by clicking the 'Forgot Username' or 'Forgot Email' link on the login page. Follow the instructions sent to your email." />
 
+            <!-- Add your new FAQs below -->
+
             <!-- FAQ Section 7 -->
             <TextView
                 android:layout_width="match_parent"
@@ -114,6 +116,7 @@
                 android:paddingBottom="10dp"
                 android:text="A: Yes, you can change your password. Go to the 'Change Password' section in the app settings and follow the instructions to set a new password." />
 
+            <!-- FAQ Section 8 -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -127,7 +130,7 @@
                 android:paddingBottom="10dp"
                 android:text="A: To reset your password, go to the login page and click the 'Forgot Password' link. Follow the instructions sent to your email." />
 
-            <!-- FAQ Section 2 -->
+            <!-- FAQ Section 9 -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -140,43 +143,121 @@
                 android:layout_height="wrap_content"
                 android:text="A: You can contact our customer support team by emailing support@example.com or using the 'Contact Us' form in the app settings." />
 
+
+            <!-- FAQ Section 11 -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Q: How do I reset my password?"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="A: To reset your password, go to the login page and click the 'Forgot Password' link. Follow the instructions sent to your email." />
-
-            <!-- FAQ Section 2 -->
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="Q: How do I contact customer support?"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="A: You can contact our customer support team by emailing support@example.com or using the 'Contact Us' form in the app settings." />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="Q: How can I update my profile information?"
+                android:text="Q: How do I change my email address?"
                 android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingBottom="10dp"
-                android:text="A: To update your profile, go to the 'Profile' or 'Settings' section in the app. You can edit your name, profile picture, and other details there." />
+                android:text="A: To change your email address, go to the 'Account Settings' in the app and look for the 'Email' section. Follow the instructions to update your email." />
+
+            <!-- FAQ Section 12 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Q: How can I recover a deleted account?"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:text="A: If your account was deleted, contact our support team immediately at support@example.com. They will guide you through the account recovery process." />
+
+            <!-- FAQ Section 13 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Q: Can I use the app on multiple devices?"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:text="A: Yes, you can use the app on multiple devices. Log in with the same account on each device to access your data and settings." />
+
+
+            <!-- FAQ Section 11 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Q: How can I change my notification settings?"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:text="A: To adjust your notification preferences, go to the 'Notification' or 'Settings' section in the app. From there, you can customize which notifications you receive and how you receive them." />
+
+            <!-- FAQ Section 12 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Q: What do I do if I can't log in to my account?"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:text="A: If you're having trouble logging in, double-check your username and password. If you still can't log in, use the 'Forgot Password' link on the login page to reset your password or contact our support team for further assistance." />
+
+            <!-- FAQ Section 13 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Q: How can I delete my account?"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:text="A: If you wish to delete your account, go to the 'Account Settings' or 'Profile' section in the app and look for the 'Delete Account' option. Follow the provided instructions to permanently delete your account." />
+
+            <!-- FAQ Section 14 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Q: Can I change my username?"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:text="A: Yes, you can change your username by going to the 'Username' or 'Profile' section in the app settings. There should be an option to edit and update your username." />
+
+            <!-- FAQ Section 15 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Q: How do I update the app to the latest version?"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:text="A: To update the app, visit your device's app store (e.g., Google Play Store or Apple App Store) and search for the app. If an update is available, you'll see an option to update the app to the latest version." />
+
+
 
         </LinearLayout>
     </ScrollView>

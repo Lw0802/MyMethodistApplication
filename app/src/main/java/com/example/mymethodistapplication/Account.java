@@ -164,6 +164,8 @@ public class Account extends AppCompatActivity {
                     return true;
                 }
                 if (itemId == R.id.nav_Photos) {
+                    Intent intent = new Intent(Account.this, Photos1.class);
+                    startActivity(intent);
                     return true;
                 }
                 if (itemId == R.id.nav_Volunteer) {
@@ -175,6 +177,8 @@ public class Account extends AppCompatActivity {
                     return true;
                 }
                 if (itemId == R.id.nav_Account) {
+                    Intent intent = new Intent(Account.this, Account.class);
+                    startActivity(intent);
                     return true;
                 }
 

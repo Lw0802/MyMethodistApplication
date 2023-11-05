@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".RegisterPage"
+    android:id="@+id/RegisterPage"
+    android:background="@color/white">
+
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="172dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginBottom="34dp"
+        android:text="Already Have an Account?" />
+
+    <TextView
+        android:id="@+id/exstingacc"
+        android:layout_width="83dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="170dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="12dp"
+        android:text="Click Here"
+        android:textColor="#2792C4" />
+
+    <ProgressBar
+        android:id="@+id/ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:layout_below="@id/CompleteSignUpButton"/>
+
+
+    <Button
+        android:id="@+id/CompleteSignUpButton"
+        android:layout_width="348dp"
+        android:layout_height="67dp"
+        android:layout_below="@id/editTextTextPassword"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#2792C4"
+        android:layout_centerInParent="true"
+        android:text="Sign Up" />
+
+    <Button
+        android:id="@+id/FacebookButton"
+        android:layout_width="190dp"
+        android:layout_height="67dp"
+        android:layout_below="@id/CompleteSignUpButton"
+        android:layout_alignRight="@id/YouTubeButton"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="27dp"
+        android:layout_marginRight="8dp"
+        android:backgroundTint="#2792C4"
+        android:text="Facebook" />
+
+    <Button
+        android:id="@+id/YouTubeButton"
+        android:layout_width="190dp"
+        android:layout_height="67dp"
+        android:layout_below="@id/CompleteSignUpButton"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="26dp"
+        android:backgroundTint="#2792C4"
+        android:text="YouTube" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        app:srcCompat="@drawable/church_logo"
+        />
+
+    <EditText
+        android:id="@+id/editTextEmailAddress2"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextSurname"
+        android:layout_centerInParent="true"
+        android:ems="10"
+        android:hint="Email Address"
+
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPhone"
+        android:layout_centerInParent="true"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView2"
+        android:layout_centerInParent="true"
+        android:ems="10"
+        android:hint="Name"
+
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/editTextSurname"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextName"
+        android:layout_centerInParent="true"
+        android:ems="10"
+        android:hint="Surname"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEmailAddress2"
+        android:layout_centerInParent="true"
+        android:ems="10"
+        android:hint="CellPhone Number"
+        android:inputType="phone"
+        android:minHeight="48dp" />
+
+</RelativeLayout>

@@ -18,7 +18,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Notifications extends AppCompatActivity {
 
-    private CheckBox emailNotificationsCheckbox;
+
     private CheckBox inAppNotificationsCheckbox;
 
     BottomNavigationView bottomNavigationView;
@@ -29,8 +29,12 @@ public class Notifications extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notifications);
 
-        emailNotificationsCheckbox = findViewById(R.id.emailNotificationsCheckbox);
+
         inAppNotificationsCheckbox = findViewById(R.id.inAppNotificationsCheckbox);
+
+
+
+
 
         binding = ActivityNotificationsBinding.inflate(getLayoutInflater());
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
@@ -44,7 +48,7 @@ public class Notifications extends AppCompatActivity {
         boolean receiveInAppNotifications = false; // Load from SharedPreferences
 
 
-                emailNotificationsCheckbox.setChecked(receiveEmailNotifications);
+
         inAppNotificationsCheckbox.setChecked(receiveInAppNotifications);
 
         bottomNavigationView.setOnItemSelectedListener(item -> {
@@ -80,7 +84,7 @@ public class Notifications extends AppCompatActivity {
     }
 
     public void saveNotificationPreferences(View view) {
-        boolean receiveEmailNotifications = emailNotificationsCheckbox.isChecked();
+
         boolean receiveInAppNotifications = inAppNotificationsCheckbox.isChecked();
 
         // Save these preferences, e.g., to SharedPreferences or your server
@@ -144,4 +148,5 @@ public class Notifications extends AppCompatActivity {
         });
         popupMenu.show();
     }
+
 }

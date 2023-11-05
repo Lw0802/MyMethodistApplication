@@ -10,7 +10,7 @@
     <!--About 1 History-->
     <string name="About1"> GraceWell Methodist Church has a rich history that dates back to the late 19th century. It was founded in the small town of Graceville in the heartland of the United States. The church was established by a group of dedicated Methodist followers who were inspired by the teachings of John Wesley and sought to spread the message of God\'s grace and love. </string>
     <string name="About1p2">In 1885, a humble wooden structure was constructed as the first place of worship for GraceWell Methodist Church.</string>
-    <string name="About1p3">In the mid-1960s, GraceWell Methodist Church underwent a significant expansion, with a modern sanctuary being built to accommodate the growing congregation. This expansion allowed for the addition of various ministries, including youth groups, women\'s groups, and community service initiatives</string>
+    <!---<string name="About1p3">In the mid-1960s, GraceWell Methodist Church underwent a significant expansion, with a modern sanctuary being built to accommodate the growing congregation. This expansion allowed for the addition of various ministries, including youth groups, women\'s groups, and community service initiatives</string>-->
     <string name="About1p4">The early congregation faced numerous challenges, including limited resources and a small membership. However, their unwavering faith and determination allowed the church to grow steadily over the years</string>
 
     <!--About 1 History-->
@@ -68,7 +68,6 @@
     <string name="feb_2021" translatable="false">Feb 2021</string>
     <string name="address" translatable="false" />
     <string name="About1p3">In the mid-1960s, GraceWell Methodist Church underwent a significant expansion, with a modern sanctuary being built to accommodate the growing congregation. This expansion allowed for the addition of various ministries, including youth groups, women\'s groups, and community service initiatives</string>
-    <string name="About1p4">The early congregation faced numerous challenges, including limited resources and a small membership. However, their unwavering faith and determination allowed the church to grow steadily over the years</string>
 
     <!--- Main Navigation Headings-->
     <string name="sermonsmenu">Sermons</string>
@@ -102,9 +101,23 @@
     <string name="accounth4">Manage Requests</string>
     <string name="accounth5">Notifications</string>
     <string name="accounth6">Change Language</string>
-    <string name="accounth7">Help</string>
+    <string name="accounth7">Help &amp; FAQS</string>
     <string name="title_activity_help" translatable="false">Help</string>
+    <string name="changelangheading2">Languages we Support\n</string>
+    <string name="changelangheading1">Change Language</string>
 
+<!--- Home Page -->
+    <string name="newsandupdates">News and Updates</string>
+    <string name="homedate">Monday 21 August 2023</string>
+    <string name="homebutton1">Daily Verse On Facebook"</string>
+    <string name="homebutton2">Our Facebook Page</string>
+    <string name="homebutton3">Our YouTube Channel</string>
+    <string name="homebutton4">Sunday Sermons Are Live Streamed Every Sunday(8am - 10am) On Facebook</string>
 
-
+<!--- Landing Page -->
+    <string name="landingheading1">Welcome To The All New Gracewell Methodist Church Mobile Application</string>
+    <string name="landingheading2">Do not forget to show hospitality to strangers, for by so doing some people have shown hospitality to angels without knowing it.(Hebrews 13:2)</string>
+    <string name="landingwelcome">We Welcome You All</string>
+    <string name="landingbutton1">Login</string>
+    <string name="landingbutton2">Sign Up</string>
 </resources>
